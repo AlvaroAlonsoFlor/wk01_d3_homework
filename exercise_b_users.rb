@@ -69,7 +69,6 @@ sorted[0]
 
 users["Erik"][:lottery_numbers].sort()[0]
 
-
 # 6. Return an array of Avril's lottery numbers that are even
 
 avril_lottery_num = users["Avril"][:lottery_numbers]
