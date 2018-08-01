@@ -64,7 +64,11 @@ users ["Erik"][:lottery_numbers]
 users["Avril"][:pets][0][:name]
 # 5. Get the smallest of Erik's lottery numbers
 
-users["Erik"][:lottery_numbers][2]
+sorted = users["Erik"][:lottery_numbers].sort()
+sorted[0]
+
+users["Erik"][:lottery_numbers].sort()[0]
+
 
 # 6. Return an array of Avril's lottery numbers that are even
 
