@@ -61,11 +61,11 @@ users["Erik"][:home_town]
 # 3. Get the array of Erik's lottery numbers
 users ["Erik"][:lottery_numbers]
 # 4. Get the type of Avril's pet Monty
-users["Avril"][:pets][0][:name]
+users["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
 
-sorted = users["Erik"][:lottery_numbers].sort()
-sorted[0]
+# sorted = users["Erik"][:lottery_numbers].sort()
+# sorted[0]
 
 users["Erik"][:lottery_numbers].sort()[0]
 
@@ -79,6 +79,11 @@ for number in avril_lottery_num
     even_nums.push(number)
   end
 end
+
+# another option
+# for number in users["Avril"][:lottery_numbers]
+#   result << number if number.even?
+# end
 
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
@@ -94,3 +99,7 @@ p users["Erik"][:pets][0]
 # 10. Add another person to the users hash
 
  users["Alvaro"] = {}
+
+ # users.merge({
+ #   # whole hash here
+ #   })
